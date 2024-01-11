@@ -1,14 +1,18 @@
-# Typescript Application Template
+# Pico-TS
 
-Welcome to the TypeScript Application Template repository! This template is designed to jumpstart your journey in
-creating powerful and efficient applications using TypeScript.
+Pico-TS is a tiny ui library without any 3rd party dependency.
+
+[!WARNING]
+Please note that the library is currently under active development and not yet stable. It may have breaking changes or
+incomplete functionality. Strongly recommended using it only for experimental purposes and not in production
+environments!!
 
 ## Key Features
 
+- **Tiny:** Tiny size, making it an ideal choice for developers looking to minimize their project's footprint.
 - **TypeScript:** Pre-configured TypeScript setup for strict type checking and optimal developer experience.
 - **SonarLint & Prettier:** Integrated code analysis and formatting tools to maintain code quality and consistency.
 - **Node.js Testing:** Integrated Node.js testing utilities for writing comprehensive and reliable unit tests.
-- **Efficient Build Process:** Pre-defined scripts for building and running your TypeScript application.
 
 ## Getting Started
 
@@ -17,21 +21,17 @@ creating powerful and efficient applications using TypeScript.
 - Node.js 20.9 or higher
 - NPM 10.2.4 or higher
 
-### Initial Setup and Usage
+### Development Setup and Usage
 
-1. Creating your repository:
-   - Click the **Use this template** button at the top of the repository.
-   - Enter a name for your repository and click **Create repository from template**.
-2. Local setup:
-   - Clone your newly created repository to your local machine.
+1. Local setup:
+   - Clone this repository to your machine.
    - Navigate to the repository folder in your terminal.
-   - Run `npm install` to install all dependencies.
-3. Development workflow:
-   - `npm run build` - Compiles your TypeScript code.
-   - `npm run start` - Executes your application.
+   - Run `npm install` to install all development dependencies.
+2. Development workflow:
+   - `npm run build` - Compiles the TypeScript code.
    - `npm run test` - Runs unit tests to ensure code reliability.
    - `npm run sonar` - Performs code analysis for potential issues.
-   - `npm run format` - Formats your code using Prettier.
+   - `npm run format` - Formats the code using Prettier.
    - `npm run clean` - Clears the build directory.
 
 ## License

@@ -1,9 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/package",
-  "name": "tmpl__typescript-application",
+  "name": "@zdaav/pico-ts",
   "version": "0.0.1",
-  "description": "Template for a Typescript application",
-  "private": true,
+  "description": "Tiny ui library without any 3rd party dependency",
   "author": "Dávid J. Zarándi",
   "license": "BSD-3-Clause",
   "engines": {
@@ -12,13 +11,11 @@
   },
   "scripts": {
     "build": "npm run clean && tsc",
-    "start": "node --env-file=.env dist/main.js",
     "test": "npm run build && node --test dist/**/*.test.js",
     "sonar": "sonarlint --src 'src/**/*.ts'",
     "format": "prettier --write .",
     "clean": "rimraf dist"
   },
-  "dependencies": {},
   "devDependencies": {
     "@types/node": "^20.9.0",
     "prettier": "^3.1.0",
@@ -28,7 +25,7 @@
   },
   "keywords": [
     "typescript",
-    "application",
+    "library",
     "solarlint",
     "prettier",
     "rimraf"
