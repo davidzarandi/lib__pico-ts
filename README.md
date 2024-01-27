@@ -1,6 +1,7 @@
 # Pico-TS
 
-Pico-TS is a tiny ui library without any 3rd party dependency.
+Pico-TS is a tiny ui library without any 3rd party dependency (for building the examples the project uses
+[`esbuild`](https://esbuild.github.io)).
 
 [!WARNING]
 Please note that the library is currently under active development and not yet stable. It may have breaking changes or
@@ -28,11 +29,13 @@ environments!!
    - Navigate to the repository folder in your terminal.
    - Run `npm install` to install all development dependencies.
 2. Development workflow:
-   - `npm run build` - Compiles the TypeScript code.
-   - `npm run test` - Runs unit tests to ensure code reliability.
+   - `npm run build:lib` - Compiles the TypeScript code for the library.
+   - `npm run clean:lib` - Clears the build directory for the library.
+   - `npm run test:lib` - Runs unit tests to ensure code reliability for the library.
    - `npm run sonar` - Performs code analysis for potential issues.
    - `npm run format` - Formats the code using Prettier.
-   - `npm run clean` - Clears the build directory.
+   - `npm run build:example:<name of the example>` - Builds the selected example.
+   - `npm run clean:example:<name of the example>` - Clears the build directory for the selected example.
 
 ## License
 
